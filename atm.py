@@ -17,7 +17,7 @@ class ATM(ATMBase):
         print("your balance=",self.__balance)
     def deposite(self):
         amt=int(input("amt for deposite:"))
-        self.__blance=self.__balance+amt
+        self.__balance=self.__balance+amt
         self.transaction.append("deposited"+str(amt))
         print("deposite successfull")
     def withdraw(self):
@@ -55,6 +55,7 @@ while True:
              break
     else:
         print("invalid option")
+
 
 
 
